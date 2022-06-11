@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: kafka-demo
+
+kafka:
+    consumer:
+        # Default to 30 seconds
+        maxPollIntervalMs: 30000
+
+server:
+    port: 9001
+
+kafkademo:
+    id: demo
+    thirdpartyEndpoint: https://kafkademo.com/api/kafkatransactionsdemo/
+    outboundTopic1 : "demo-outbound-topic1"
+    outboundTopic2 : "demo-outbound-topic2"
